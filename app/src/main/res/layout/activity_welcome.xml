@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bckgrnd"
+    android:orientation="vertical"
+    tools:context=".WelcomeActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="82dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="105dp"
+        android:layout_marginRight="105dp"
+        android:layout_marginBottom="65dp"
+        android:src="@drawable/logo"
+        android:transitionName="logoTN" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="@font/red_hat_display_bold"
+        android:text="Great places to discussing a hobbies, arts, cultures, games, and such more !"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:textSize="14dp"
+        android:fontFamily="@font/red_hat_display_medium"
+        android:text="Join, Develop, or Create your own community and share your experience to others !"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/signin_btn"
+        android:transitionName="signinTN"
+        android:layout_width="225dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="160dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/red_hat_text_bold"
+        android:text="Sign In"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/purple_200"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:cornerRadius="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="or"
+        android:fontFamily="@font/red_hat_display_medium"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/signup_btn"
+        android:transitionName="signupTN"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        app:strokeWidth="2dp"
+        app:strokeColor="@color/white"
+        android:layout_width="225dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/red_hat_text_bold"
+        android:text="Sign Up"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:cornerRadius="10dp" />
+
+
+
+</LinearLayout>
