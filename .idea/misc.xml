@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Maste/StudioProjects/forumku/app/src/main/res/drawable/bgnostretch.xml" value="0.1875" />
+        <entry key="..\:/Users/Maste/StudioProjects/forumku/app/src/main/res/layout/activity_sign_in.xml" value="0.25" />
         <entry key="..\:/Users/Maste/StudioProjects/forumku/app/src/main/res/layout/activity_splash_screen.xml" value="0.25" />
         <entry key="..\:/Users/Maste/StudioProjects/forumku/app/src/main/res/layout/activity_welcome.xml" value="0.264" />
       </map>
