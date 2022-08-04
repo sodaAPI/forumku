@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,6 +7,11 @@
     android:background="@drawable/bgform"
     android:orientation="vertical"
     tools:context=".SignInActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
     <ImageButton
         android:id="@+id/back_btn"
@@ -16,6 +21,7 @@
         android:layout_marginTop="25dp"
         android:layout_marginBottom="31dp"
         android:background="@drawable/backbtn"
+        android:nestedScrollingEnabled="true"
         android:overScrollMode="always"/>
 
     <TextView
@@ -23,7 +29,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:fontFamily="@font/red_hat_display_black"
-        android:text="Welcome back, you’ve been missed !"
+        android:text="Welcome, sign up first to continue"
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textColor="@color/white"
@@ -67,6 +73,70 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Username"
+        android:textColor="@color/white"
+        android:fontFamily="@font/red_hat_display_medium"
+        android:textSize="14sp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/username"
+        android:layout_width="311dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/white"
+        app:boxCornerRadiusTopEnd="15dp"
+        app:boxCornerRadiusBottomEnd="15dp"
+        app:boxCornerRadiusBottomStart="15dp"
+        app:boxCornerRadiusTopStart="15dp"
+        app:hintTextColor="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="text"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/red_hat_display_medium"
+            android:textColor="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone"
+        android:textColor="@color/white"
+        android:fontFamily="@font/red_hat_display_medium"
+        android:textSize="14sp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/phone"
+        android:layout_width="311dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/white"
+        app:boxCornerRadiusTopEnd="15dp"
+        app:boxCornerRadiusBottomEnd="15dp"
+        app:boxCornerRadiusBottomStart="15dp"
+        app:boxCornerRadiusTopStart="15dp"
+        app:hintTextColor="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="phone"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/red_hat_display_medium"
+            android:textColor="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Password"
         android:textColor="@color/white"
         android:fontFamily="@font/red_hat_display_medium"
@@ -98,44 +168,37 @@
             android:textColor="@color/black" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <TextView
-        android:id="@+id/forgotpassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="end"
-        android:layout_marginTop="30dp"
-        android:layout_marginRight="50dp"
-        android:layout_marginBottom="70dp"
-        android:text="Forgot Password?"
-        android:textAlignment="textEnd"
-        android:textColor="@color/white"
-        android:fontFamily="@font/red_hat_display_medium"/>
+        <TextView
+            android:id="@+id/haveaccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="25dp"
+            android:fontFamily="@font/red_hat_display_medium"
+            android:text="Already have an account?"
+            android:textAlignment="textEnd"
+            android:textColor="@color/white" />
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/signin_btn"
-        android:transitionName="signinTN"
+        <com.google.android.material.button.MaterialButton
+        android:id="@+id/signup_btn"
+        android:transitionName="signupTN"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        app:strokeWidth="2dp"
+        app:strokeColor="@color/white"
         android:layout_width="225dp"
         android:layout_height="70dp"
         android:layout_gravity="center"
-        android:backgroundTint="@color/white"
         android:fontFamily="@font/red_hat_text_bold"
-        android:text="Sign In"
+        android:text="Sign Up"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="@color/purple_200"
+        android:textColor="@color/white"
         android:textSize="24sp"
         android:textStyle="bold"
         android:typeface="monospace"
         app:cornerRadius="10dp" />
 
-    <TextView
-        android:id="@+id/notregister"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Not registered yet?"
-        android:textColor="@color/white"
-        android:fontFamily="@font/red_hat_display_medium"
-        android:layout_gravity="center"
-        android:layout_marginTop="40dp"/>
+    </LinearLayout>
 
-
-</LinearLayout>
+</ScrollView>

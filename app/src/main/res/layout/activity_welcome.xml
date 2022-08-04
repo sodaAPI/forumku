@@ -71,7 +71,7 @@
         android:textColor="@color/white"
         android:layout_gravity="center"
         android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="16dp"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/signup_btn"
@@ -90,7 +90,5 @@
         android:textStyle="bold"
         android:typeface="monospace"
         app:cornerRadius="10dp" />
-
-
 
 </LinearLayout>
